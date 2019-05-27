@@ -1,0 +1,102 @@
+/* CSS accompanying the HTML to compute the Mohrs Circle 2D. 
+    Written by Amarnath S, aka Avijnata, May 2019
+    amarnaths.codeproject@gmail.com */
+
+body {
+    font-family: "Lucida Console";
+    text-align: center;
+    min-width: 700;
+    background-color: bisque;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+section {
+    min-width: 100;
+}
+
+.nonCanvasComponents {
+    margin-top: 1px;
+    background-color: lightyellow;
+    color: maroon;
+    width: 30%;
+    float: left;
+}
+
+.nonCanvasResults {
+    margin-top: 1px;
+    background-color: lightyellow;
+    color: indigo;
+    width: 25%;
+    float: left;
+    margin-left: 100px;
+}
+
+.graph2 {
+    float: left;
+}
+
+.graph1 {
+    float: right;
+}
+
+.initialline{
+    display: block;
+    clear: both;   
+    border-style: none none dotted;
+    color: #000000;  
+}
+
+.line {
+    display: block;
+    clear: both;
+    padding-top: 5px;
+    border-style: none none dotted;
+    color: #000000;
+}
+
+.slider {
+    vertical-align: center;
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+table {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nonCanvasComponents, .graph2{
+    margin-left: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 1px 0;
+    box-sizing: border-box;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    color: #665544;
+}
+
+button {
+    font-size: 14pt;
+}
+
+.blank_row {
+    height: 3px;
+}
+
+.slider_range {
+    width: 160px;
+}
+
+input[type=text] {
+    border: 1px solid darkorange;
+    border-radius: 2px;
+}

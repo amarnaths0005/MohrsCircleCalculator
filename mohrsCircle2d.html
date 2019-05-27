@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mohr's Circle Calculator and Transformation of 2D Stress</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/script.js"></script>
+  <!-- HTML to compute the Mohrs Circle 2D. 
+    Written by Amarnath S, aka Avijnata, May 2019 
+    amarnaths.codeproject@gmail.com -->
+</head>
+<body>
+    <h2>
+        Mohr's Circle for Two-Dimensional State of Stress and Stress Transformation
+    </h2>
+    <hr class='initialline' />
+    <section class = "nonCanvasComponents">
+        <fieldset>
+            <h3>Components of Stress in 2D, MPa </h3>
+            <fieldset>
+                <table>
+                    <tr >
+                        <td>&sigma;<sub>x</sub></td>
+                        <td>=</td>
+                        <td> <input type="text" id="sigmax" value="15"> </input> </td> 
+                    </tr>
+                    <tr >
+                        <td>&sigma;<sub>y</sub></td>
+                        <td>=</td>
+                        <td> <input type="text" id="sigmay" value="5"> </input> </td> 
+                    </tr>
+                    <tr >
+                        <td>&tau;<sub>xy</sub></td>
+                        <td>=</td>
+                        <td> <input type="text" id="tauxy" value="4"> </input> </td> 
+                    </tr>
+                    <tr>
+                        <td colspan="3"> <button id="bnCompute">Compute</button> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"> <output id="opError"></output> </td> 
+                    </tr>
+                </table>
+            </fieldset>
+        </fieldset>
+    </section>
+    <section class = "nonCanvasResults" >
+        <fieldset>
+            <h3>Computed Principal Stresses, their Directions and Maximum Shear Stress </h3>
+            <fieldset>
+                <table>
+                    <tr >
+                        <td>&sigma;<sub>1</sub></td>
+                        <td> = </td>
+                        <td></td>
+                        <td> <output id="opSigma1"></output> </td> 
+                    </tr>
+                    <tr >
+                        <td>&sigma;<sub>2</sub></td>
+                        <td> = </td>
+                        <td></td>
+                        <td> <output id="opSigma2"></output> </td> 
+                    </tr>
+                    <tr >
+                        <td>&theta;<sub>&sigma;<sub>1</sub></sub></td>
+                        <td> = </td>
+                        <td></td>
+                        <td> <output id="opThetaSigma1"></output> </td> 
+                    </tr>                       
+                    <tr >
+                        <td>&theta;<sub>&sigma;<sub>2</sub></sub></td>
+                        <td> = </td>
+                        <td></td>
+                        <td> <output id="opThetaSigma2"></output> </td> 
+                    </tr>
+                    <tr class = "blank_row">
+                        <td colspan = 3> </td>
+                    </tr>
+                    <tr >
+                        <td>&tau;<sub>max</sub></td>
+                        <td> = </td>
+                        <td></td>
+                        <td> <output id="opTauMax"></output> </td> 
+                    </tr>
+                </table>
+            </fieldset>
+        </fieldset>
+    </section>
+    <section class="slider">
+        <table>
+            <tr>
+                <td colspan="3">
+                    Modify the angle using the slider below
+                </td>
+            </tr>
+            <tr>
+                <td> Angle </td>
+                <td>
+                    <input type="range" id="raAngle" min=0.0 max=180.0 step="0.10" 
+                        class = "slider_range" value="0.0">
+                </td>
+                <td> <output id="opAngle">0.00</output>
+                </td>
+            </tr>
+        </table>
+    </section>
+ 
+<hr class='line' />
+    <section class="graph2">
+        <canvas width="600" height="400" id="canvasMohr" >
+            Your browser does not support canvas.
+        </canvas>
+    </section>
+    <section class="graph1">
+        <canvas width="600" height="400" id="canvasTransform" >
+            Your browser does not support canvas.
+        </canvas>
+    </section>
+</body>
+</html>
