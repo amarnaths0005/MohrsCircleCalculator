@@ -9,4 +9,4 @@ Please send feedback to amarnaths.codeproject@gmail.com
 
 Screenshot
 
-![Screenshot of Mohr](https://github.com/amarnaths0005/MohrsCircleCalculator/blob/master/Mohr.png)
+![Screenshot of Mohr]([https://github.com/amarnaths0005/MohrsCircleCalculator/blob/master/Mohr.png](https://github.com/amarnaths0005/MohrsCircleCalculator/blob/master/mohr1.png))
