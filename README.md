@@ -7,5 +7,6 @@ To invoke this application, open the file <i>mohrsCircle2d.html</i> in the brows
 
 Please send feedback to amarnaths.codeproject@gmail.com
 
-Screenshot
+You can work on this online at 
+https://amarnaths0005.github.io/MohrsCircleCalculator/
 
